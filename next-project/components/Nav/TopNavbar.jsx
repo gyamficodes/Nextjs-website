@@ -6,14 +6,14 @@ const TopNavbar = () => {
           <div className=" flex items-center justify-between h-full">
             {/* icons */}
             <div className=" flex  items-center gap-4">
-              <i className="lni lni-twitter-original  !text-[13px]   !text-const-text"></i>
-              <i className="lni lni-facebook-line  !text-[13px]   !text-const-text"></i>
-              <i className="lni lni-google  !text-[13px]   !text-const-text"></i>
-              <i className="lni lni-pinterest  !text-[13px]   !text-const-text"></i>
-              <i className="lni lni-dribbble  !text-[13px]   !text-const-text"></i>
+              <i className="lni lni-twitter-original  !text-[13px]  cursor-pointer  !text-const-text"></i>
+              <i className="lni lni-facebook-line  !text-[13px] cursor-pointer  !text-const-text"></i>
+              <i className="lni lni-google  !text-[13px]  cursor-pointer !text-const-text"></i>
+              <i className="lni lni-pinterest  !text-[13px] cursor-pointer  !text-const-text"></i>
+              <i className="lni lni-dribbble  !text-[13px] cursor-pointer  !text-const-text"></i>
             </div>
             {/* icons */}
-            
+
             {/* links */}
             <div className=" flex items-center gap-4">
               <div className=" flex items-center gap-3">
@@ -25,13 +25,13 @@ const TopNavbar = () => {
               <div className=" flex items-center gap-3">
                 <i class="lni lni-envelope  !text-[13px]   !text-const-text"></i>
                 <h1 className="  text-const-text text-[13px]">
-                contact@construction.com 
+                  contact@construction.com
                 </h1>
               </div>
               <div className=" flex items-center gap-3">
                 <i class="lni lni-alarm-clock  !text-[13px]   !text-const-text"></i>
                 <h1 className="  text-const-text text-[13px]">
-                Mon-Fri: 7:00 - 17:00
+                  Mon-Fri: 7:00 - 17:00
                 </h1>
               </div>
             </div>
