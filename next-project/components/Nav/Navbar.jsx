@@ -1,18 +1,42 @@
 "Use Client";
 import Image from "next/image";
 import logo from "../../assets/images/banner/logo-light.png";
-import { useState } from "react";
+import { useState , useEffect} from "react";
+
 
 const Navbar = () => {
-
 const [isOpen , setIsOpen] = useState(true)
 
 function  handdleOpen() {
      setIsOpen( !isOpen)
 } 
 
+
+useEffect(() => {
+
+  const  handdlescroll = () => {
+    let  navcomp = document.querySelector('#nav');
+        let scrollPosition  = window.scrollY;
+        const scroll = scrollPosition.toFixed(0);
+        if(scroll >= 70){
+          navcomp.style.position = 'fixed';
+          navcomp.style.top = 0;
+          navcomp.style.left = 0;
+          navcomp.style.right = 0;
+          navcomp.style.zIndex = 9999;
+        }
+        if(scroll == 0){
+          navcomp.style.position = 'relative';
+        }
+  }
+
+window.addEventListener('scroll', handdlescroll);
+
+},[])
+
+
   return (
-    <div className="h-[70px] bg-const-nav">
+    <div id="nav"  className="h-[70px] bg-const-nav  transition-all duration-200 ease-in-out">
       <div className="xl:w-[60%] w-[95%] mx-auto h-full">
         <div className="flex items-center justify-between h-full">
           {/* logo */}
