@@ -5,7 +5,7 @@ import Navbar from "../Nav/Navbar";
 
 const Banner = () => {
   return (
-    <section className="banner h-[100vh]  bg-no-repeat bg-cover bg-center ">
+    <section className="banner h-[100vh]  bg-no-repeat bg-cover bg-center  overflow-auto overflow-x-hidden">
       {/* nav details */}
       <TopNavbar />
       <Navbar />

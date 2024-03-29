@@ -14,6 +14,7 @@ module.exports = {
         "const-border": "#515151",
         "const-gray": "#f8f8f8",
         "const-footer": "#1a1a1a",
+        "const-text-p": "#4b4b4b",
         "const-footer-nav": "#101010",
       },
       backgroundImage: {
