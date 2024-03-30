@@ -20,7 +20,7 @@
   overflow: hidden;
 }
 .slide-left h1 {
-  animation: slide 5s;
+  animation: slide 3s;
 }
 
 @keyframes slide {
@@ -37,7 +37,7 @@
 
 
 .slide-right h1 {
-  animation: 5s slide-right;
+  animation: 3s slide-right;
 }
 
 @keyframes slide-right {
