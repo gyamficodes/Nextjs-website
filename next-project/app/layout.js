@@ -12,7 +12,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en"  className="dark">
+    <html lang="en"  className="">
          <head>
           
          <link href="https://cdn.lineicons.com/4.0/lineicons.css" rel="stylesheet"></link> 
