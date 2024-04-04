@@ -5,6 +5,7 @@ import Bannercomp from "@/components/Banner/Bannercomp";
  import Service from "@/components/Service/Service.jsx";
  import Feature from "@/components/Fearured/Feature.jsx";
 import About from "@/components/About/About.jsx";
+import Offer from "@/components/Offer/Offer.jsx";
 export default function Home() {
   return (
   <>
@@ -13,6 +14,7 @@ export default function Home() {
 <Service/>
 <Feature/>
 <About/>
+<Offer/>
   </>
   );
 }

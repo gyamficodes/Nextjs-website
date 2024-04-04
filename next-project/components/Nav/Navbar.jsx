@@ -44,7 +44,7 @@ window.addEventListener('scroll', handdlescroll);
           {/* logo */}
           {/* links */}
           <div className="  items-center gap-6 lg:flex hidden">
-              <div className="flex items-center group gap-1 text-const-text cursor-pointer hover:text-const-btn transition-all duration-150 ease-in-out">
+              <div className="flex items-center group  gap-1 text-const-text cursor-pointer hover:text-const-btn transition-all duration-150 ease-in-out">
                   <h1 className="  text-[15px] capitalize font-[500]">home</h1>
                   <i class="lni lni-chevron-down group-hover:rotate-180 !text-[12px] duration-150 ease-in-out"></i>
               </div>
