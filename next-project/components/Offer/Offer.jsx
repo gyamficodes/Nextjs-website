@@ -32,6 +32,8 @@ const Offer = () => {
     },
   ];
 
+
+  
   return (
     <>
       <section className="h-auto bg-const-gray py-[50px]">
