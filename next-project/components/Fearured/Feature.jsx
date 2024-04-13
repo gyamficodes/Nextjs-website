@@ -8,7 +8,7 @@ const data = [
   {id:2, url:`/card/card2.jpg`, ame:"luxury buildings", text:"constrcution"},
   {id:3, url:`/card/card3.jpg` , ame:"luxury buildings", text:"constrcution"},
   {id:4, url:`/card/card4.jpg`, ame:"luxury buildings", text:"constrcution"},
-  {id:5, url:`/card/card5.jpg` , ame:"luxury buildings", text:"constrcution"},
+  {id:5, url:`/card/card5.jpg`, ame:"luxury buildings", text:"constrcution"},
 ]
 
 var settings = {
