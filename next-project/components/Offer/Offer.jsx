@@ -43,7 +43,7 @@ const Offer = () => {
             <div className="w-[50px] h-[2px] bg-const-btn  mt-2"></div>
           </div>
 
-          <div className=" grid grid-cols-3 w-full mt-[70px] gap-4" >
+          <div className=" grid md:grid-cols-2 lg:grid-cols-3 w-full mt-[70px] gap-4 " >
           {items.map(item  => (
                      <div key={item.id} className=" w-full h-auto">
                      <img className="  w-full h-[220px]" src={item.image} alt="image" />

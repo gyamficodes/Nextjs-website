@@ -37,6 +37,12 @@
   background-position: center;
 
 }
+.awesome{
+  background-image: url(../assets/images/banner/Awesome.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
 
 .slide-left {
   width: 100%;
