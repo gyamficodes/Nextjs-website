@@ -12,14 +12,14 @@ const Awesome = () => {
   <>
   <section  className=" h-auto py-[100px] awesome bg-fixed">
     <div className="xl:w-[60%] w-[95%] mx-auto h-full ">
- <div className=" flex items-center justify-end h-full">
+ <div className=" flex items-center   justify-center  lg:justify-end h-full">
     <div>
-        <h1 className=" text-const-text text-[26px] text-right text-[400]">The Construction Company</h1>
-        <h1  className="  text-[75px] text-white font-[600]">AWESOME FACTS</h1>
+        <h1 className=" text-const-text md:text-[20] lg:text-[26px] lg:text-right  font-[400]">The Construction Company</h1>
+        <h1  className=" text-[30px] md:text-[50px] lg:text-[75px] text-white font-[600]">AWESOME FACTS</h1>
 
-<div className="  flex items-center gap-[2em] justify-end mt-4  ">
+<div className="   flex items-end flex-wrap gap-4  lg:justify-end">
     {item.map(e => (
- <div key={e.id} className=" flex items-center flex-col ">
+ <div key={e.id} className=" flex items-center flex-col  ">
  <h1 className="text-[40px] text-white">{e.num}<span className=" text-const-btn">+</span></h1>
  <h2 className=" text-const-text">{e.text}</h2>
 </div>

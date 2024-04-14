@@ -7,6 +7,7 @@ import Bannercomp from "@/components/Banner/Bannercomp";
 import About from "@/components/About/About.jsx";
 import Offer from "@/components/Offer/Offer.jsx";
 import Awesome from "@/components/Awesome/Awesome.jsx";
+import Testimonial from "@/components/Testimonial/Testimonial.jsx";
 export default function Home() {
   return (
   <>
@@ -17,6 +18,7 @@ export default function Home() {
 <About/>
 <Offer/>
 <Awesome/>
+<Testimonial/>
   </>
   );
 }
