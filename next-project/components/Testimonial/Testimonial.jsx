@@ -23,9 +23,9 @@ const img =  [
 "></div>
 
 
-<div className="  grid grid-cols-3 w-full gap-3 mt-[50px]">
+<div className="  grid sm:grid-cols-2  md:grid-cols-3 w-full gap-3 mt-[50px]">
      { img.map((item) => (
-         <img key={item.id} src={item.url} alt="pic" />
+         <img className=" w-full" key={item.id} src={item.url} alt="pic" />
      ))
 
      }
