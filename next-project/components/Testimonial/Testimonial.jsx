@@ -1,3 +1,5 @@
+import Slider from "react-slick";
+
 const Testimonial = () => {
   const img = [
     { id: 1, url: `/test/test1.png` },
@@ -7,6 +9,51 @@ const Testimonial = () => {
     { id: 5, url: `/test/test5.png` },
     { id: 6, url: `/test/test6.png` },
   ];
+
+
+  const TestiCard = [
+    { id: 1, url: `/monial/mo3.jpg`,text: " Your efficient planning, scheduling, management, and supervision resulted in timely completion and a quality facility...Particularly refreshing was the spirit of cooperation demonstrated by your firm which served to minimize costly delays and contract modifications.", names: "DON PAULSON", title: "Architectural Co."},
+    // { id: 2, url: `/monial/mo3.jpg`,text: " Your efficient planning, scheduling, management, and supervision resulted in timely completion and a quality facility...Particularly refreshing was the spirit of cooperation demonstrated by your firm which served to minimize costly delays and contract modifications.", names: "DON PAULSON", title: "Architectural Co."},
+    // { id: 3, url: `/monial/mo3.jpg`,text: " Your efficient planning, scheduling, management, and supervision resulted in timely completion and a quality facility...Particularly refreshing was the spirit of cooperation demonstrated by your firm which served to minimize costly delays and contract modifications.", names: "DON PAULSON", title: "Architectural Co."},
+  ]
+
+  var settings = {
+    dots: true,
+    infinite:  true,
+    autoplay: true,
+      autoplaySpeed: 3000,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 3,
+    initialSlide: 0,
+    pauseOnHover: true,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 3,
+          infinite: true,
+          dots: true
+        }
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 2,
+          initialSlide: 2
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      }
+    ]
+  };
 
   return (
     <>
@@ -45,17 +92,37 @@ const Testimonial = () => {
  before:bg-const-btn before:h-full before:w-[10%] before:absolute before:z-[-1]
 "
               ></div>
+                      
+              <div className=" mt-[50px] ">
+               
+                  {  TestiCard.map(({id,text, title, url, names}) => (
+                           <div key={id} className=" w-full h-[370px]  ">
+                           <div className=" h-[150px]  bg-const-gray px-3 py-2 flex items-center justify-end">
+                             <h1 className=" text-[16px]  italic text-[#777]">
+                           {text}
+                             </h1>
+                           </div>
+                           <div className=" flex items-center justify-between px-[30px] mt-6">
+                             <div className="  flex items-center gap-2">
+                                 <img className="rounded-[50%]" width={90} height={90} src={url} alt="" />
+                                 <div>
+                                    <h1 className=" font-bold">{names}</h1>
+                                    <h2 className="text-[14px]">{title}</h2>
+                                 </div>
+                             </div>
+                             <div className=" flex items-center gap-1">
+                             <span class="material-symbols-outlined text-const-btn">star</span>
+                             <span class="material-symbols-outlined text-const-btn">star</span>
+                             <span class="material-symbols-outlined text-const-btn">star</span>
+                             <span class="material-symbols-outlined text-const-btn">star</span>
+                             </div>
+                           </div>
+                          </div>  
+                        )) 
 
-              <div className=" mt-[50px]">
-                
-                <div className=" w-full h-auto">
-                  <div className=" h-[150px]  bg-const-gray px-3 py-2 flex items-center justify-end">
-                    <h1 className=" text-[15px]">
-                  Your efficient planning, scheduling, management, and supervision resulted in timely completion and a quality facility...Particularly refreshing was the spirit of cooperation demonstrated by your firm which served to minimize costly delays and contract modifications.
-                    </h1>
-                  </div>
-                  <div></div>
-                </div>
+                        }
+           
+               
 
               </div>
             </div>

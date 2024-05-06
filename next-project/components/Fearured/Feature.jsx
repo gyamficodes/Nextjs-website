@@ -63,7 +63,7 @@ var settings = {
           <div className=" mt-[70px]">
           <Slider className="" {...settings}>
           {data.map((ele) => (
-  <div  className="w-full h-[370px] object-cove overflow-hidden  transition-all duration-200 group hover:border-b-[10px] hover:border-const-btn">
+  <div  className="w-full h-[370px] object-cover overflow-hidden  transition-all duration-200 group hover:border-b-[10px] hover:border-const-btn">
   <img  className=" w-full h-[370px]  group-hover:scale-[1.08] transition-all duration-200 ease-in-out " src={ele.url} alt="" />
   </div>
 ))}
