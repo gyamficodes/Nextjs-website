@@ -57,7 +57,7 @@ const Testimonial = () => {
 
   return (
     <>
-      <section className=" h-auto bg-const-text py-[60px]">
+      <section className=" h-auto bg-const-text py-[40px]">
         <div className="xl:w-[60%] w-[95%] mx-auto h-full">
           <div className=" grid lg:grid-cols-2 gap-5 w-full">
             <div>

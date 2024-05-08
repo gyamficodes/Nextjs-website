@@ -8,6 +8,8 @@ import About from "@/components/About/About.jsx";
 import Offer from "@/components/Offer/Offer.jsx";
 import Awesome from "@/components/Awesome/Awesome.jsx";
 import Testimonial from "@/components/Testimonial/Testimonial.jsx";
+import Footer from "@/components/Footer/Footer.jsx";
+
 export default function Home() {
   return (
   <>
@@ -19,6 +21,7 @@ export default function Home() {
 <Offer/>
 <Awesome/>
 <Testimonial/>
+<Footer/>
   </>
   );
 }
